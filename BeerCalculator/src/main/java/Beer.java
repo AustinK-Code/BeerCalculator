@@ -1,8 +1,14 @@
+import java.util.List;
+
 public class Beer {
     private String beerName;
     private Double aBVrequest;
     private String beerStyle;
     private Double grainWeight;
+    private List<String> hopFlavorProfile;
+    private List<String> maltFlavorProfile;
+    private int bitterness1To10;
+
 
 
     public Beer(String beerName, Double aBVrequest, String beerStyle) {
@@ -27,6 +33,4 @@ public class Beer {
         this.grainWeight = (getABV() / .71) * 1.33;
         return this.grainWeight;
     }
-
-
 }

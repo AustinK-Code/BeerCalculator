@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class Main {
+public class BeerApplication {
     private Scanner userInput = new Scanner(System.in);
 
 
     public static void main(String[]args) {
-        Main program = new Main();
+        BeerApplication program = new BeerApplication();
         program.run();
     }
 
@@ -22,6 +22,7 @@ public class Main {
     }
 
     private void drawBeer(){
+        //fun art to add
         System.out.println("  .   *   ..  . *  *\n" +
                 "*  * @()Ooc()*   o  .\n" +
                 "    (Q@*0CG*O()  ___\n" +
@@ -40,13 +41,6 @@ public class Main {
     }
     private void makeBeer() {
         //grab the variables
-        System.out.println("What do you want to name your beer?");
-        String beerName = userInput.nextLine();
-        System.out.println("What do you want the ABV% to be?");
-        Double aBV = userInput.nextDouble();
-        userInput.nextLine();
-        System.out.println("What style beer is this going to be?");
-        String beerStyle = userInput.nextLine();
         //make the beer
         Beer currentBeer = new Beer(beerName,aBV,beerStyle);
         //finisher statement

@@ -5,9 +5,7 @@ public class Beer {
     private Double aBVrequest;
     private String beerStyle;
     private Double grainWeight;
-    private List<String> hopFlavorProfile;
-    private List<String> maltFlavorProfile;
-    private int bitterness1To10;
+
 
 
 
@@ -23,6 +21,10 @@ public class Beer {
 
     public String getBeerStyle() {
         return beerStyle;
+    }
+
+    public void setBeerName(String beerName) {
+        this.beerName = beerName;
     }
 
     public Double getABV() {

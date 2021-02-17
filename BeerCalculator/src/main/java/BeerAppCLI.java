@@ -5,7 +5,7 @@ public class BeerAppCLI{
 
 
 
-    public void gatherInformationForBeer(){
+    public Beer gatherInformationForBeer(){
         System.out.println("What do you want to name your beer?");
         String beerName = userInput.nextLine();
         System.out.println("What do you want the ABV% to be?");
@@ -13,5 +13,8 @@ public class BeerAppCLI{
         userInput.nextLine();
         System.out.println("What style beer is this going to be?");
         String beerStyle = userInput.nextLine();
+        Beer beer = new Beer(beerName,aBV,beerStyle);
+        return beer;
     }
+
 }
